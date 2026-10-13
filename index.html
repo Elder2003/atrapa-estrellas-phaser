@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Atrapa las estrellas: videojuego sencillo desarrollado con Phaser 3.">
+  <title>Atrapa las estrellas | Juego con Phaser</title>
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100vh;background:radial-gradient(ellipse at top,#1a2550 0%,#060916 72%);color:#f6f8ff;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;display:flex;justify-content:center;align-items:center;padding:20px}
+    main{width:min(100%,960px);text-align:center}
+    h1{margin:0 0 5px;font-size:clamp(24px,4vw,36px);letter-spacing:-.6px}
+    .sub{margin:0 0 18px;color:#b2bce0;font-size:14px}
+    #juego{width:100%;max-width:900px;aspect-ratio:900/560;margin:auto;border-radius:18px;overflow:hidden;box-shadow:0 18px 60px #0009,0 0 0 1px #ffffff20;background:#091329}
+    #juego canvas{display:block;max-width:100%;height:auto;touch-action:none}
+    .ayuda{font-size:14px;color:#c8d0e8;line-height:1.6;margin:17px 0 4px}
+    .pie{font-size:12px;color:#7d8cab}
+    .fallo{padding:50px 20px;line-height:1.7}
+  </style>
+</head>
+<body>
+<main>
+  <h1>✦ Atrapa las estrellas</h1>
+  <p class="sub">Minijuego desarrollado con JavaScript y Phaser 3</p>
+  <div id="juego" aria-label="Juego Atrapa las estrellas"></div>
+  <p class="ayuda"><strong>Controles:</strong> ← → o A / D · En celular, toca y arrastra la nave.</p>
+  <p class="pie">Recoge 12 estrellas y esquiva las bombas rojas. ¡Tienes 3 vidas!</p>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.90.0/phaser.min.js"></script>
+<script src="juego.js"></script>
+</body>
+</html>
